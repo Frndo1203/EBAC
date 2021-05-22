@@ -1,9 +1,7 @@
-<p align="center">
-  <img src="banner.png" >
-</p>
-
 # Fernando
 <sub>*Intern Data Scientist* at DTI Digital</sub>
+
+<img src="https://www.nielsen.com/wp-content/uploads/sites/3/2019/04/data-science-icon-animation-banner-clockwise.gif" height='250' width='1000' style="vertical-align:middle">
 
 As a intern Data Scientist and Junior Enterprise Managing Director I combine analytical skills, ability to work in team environments, and attention to details. Having spend mosto of the time studing Machine Learning Applications to Business problems, developing critical thinking, agile development and problem-solving skills.
 
@@ -19,7 +17,7 @@ Please contact me on [Linkedin](https://www.linkedin.com/in/alexzilihuang) if yo
 ###  [EBAC - Test](https://github.com/Frndo1203/EBAC/tree/main/Primeiro_projeto)
 * Just a guided product use for testing purposes 
 * **Keywords**(Credit Risk, EDA, Machine Learning, Umbalanced)
-![image](https://user-images.githubusercontent.com/59923503/119208078-fdafdb80-ba76-11eb-994b-222665a07c9b.png)
+![credit](http://beesion.com/wp-content/uploads/2018/04/Sell-with-Less-Risk.gif)
 
 ---
 
