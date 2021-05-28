@@ -14,9 +14,9 @@ Please contact me on [Linkedin](https://www.linkedin.com/in/alexzilihuang) if yo
 
 ## Projects:
 
-###  [EBAC - Test](https://github.com/Frndo1203/EBAC/tree/main/Primeiro_projeto)
-* Just a guided product use for testing purposes 
-* **Keywords**(Credit Risk, EDA, Machine Learning, Umbalanced)
+###  [EBAC - Exercises](https://github.com/Frndo1203/Portfolio/tree/main/EBAC_exercises_notebooks)
+* Just a repo for storing the exercises of the EBAC Data Scientist course 
+* **Keywords**(Credit Risk, EDA, Machine Learning, Python)
 ![credit](http://beesion.com/wp-content/uploads/2018/04/Sell-with-Less-Risk.gif)
 
 ---
