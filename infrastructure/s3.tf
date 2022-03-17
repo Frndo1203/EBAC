@@ -1,10 +1,6 @@
 # HCL - Hashicorp Configuration Language
 # Linguagem declarativa 
 
-provider "aws" {
-  region = var.base_region
-}
-
 resource "aws_s3_bucket" "datalake" {
   # Resource configuration parameters
   # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
@@ -31,15 +27,4 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "datalake_side_enc
     }
   }
 }
-
-resource "aws_s3_object" "spark_code" {
-  bucket = aws_s3_bucket.datalake.id
-  key    = "emr/pyspark/job_spark_from_tf.py"
-  acl    = "private"
-
-  source = "../jobs_emr.py"
-  etag   = filemd5("../jobs_emr.py")
-
-}
-
 
