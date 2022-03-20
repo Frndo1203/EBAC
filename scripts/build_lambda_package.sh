@@ -18,7 +18,7 @@ else
 fi 
 
 # Declares requirements variable for lambda instance
-FILE_REQUIREMENTS=../elt/lambda_requirements.txt
+FILE_REQUIREMENTS=../etl/lambda_requirements.txt
 
 
 # Verifies if lambda_requirements.txt exists
