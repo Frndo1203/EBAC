@@ -34,16 +34,16 @@ fi
 cd $PACKAGE
 
 # Variable for lambda function
-LAMBDA_FUNCTION=../../etl/lambda_function.py
+LAMBDA_FUNCTION=../etl/lambda_function.py
 
 # Verifies if lambda_function.py exists
 if [ -f $LAMBDA_FUNCTION ]
 then
     echo "================================================="
     echo "Copying handler function"
-    cp $LAMBDA_FUNCTION
+    cp $LAMBDA_FUNCTION .
     echo "Compacting lambda_function_payload.zip"
-    zip -r9 ../lambda_function_payload.zip
+    zip -r9 ../lambda_function_payload.zip .
     echo "Dependencies succesfully compressed."
     echo "=================================================" 
 fi
