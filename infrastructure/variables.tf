@@ -13,3 +13,7 @@ variable "numero_conta" {
 variable "base_region" {
   default = "us-east-2"
 }
+
+variable "lambda_function_name" {
+  default = "ExecuteEMR"
+}
