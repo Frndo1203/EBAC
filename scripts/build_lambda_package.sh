@@ -34,7 +34,7 @@ fi
 cd $PACKAGE
 
 # Variable for lambda function
-LAMBDA_FUNCTION=../etl/lambda_function.py
+LAMBDA_FUNCTION=../../etl/lambda_function.py
 
 # Verifies if lambda_function.py exists
 if [ -f $LAMBDA_FUNCTION ]
