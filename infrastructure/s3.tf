@@ -1,6 +1,7 @@
 # HCL - Hashicorp Configuration Language
 # Linguagem declarativa 
 
+# datalake bucket
 resource "aws_s3_bucket" "datalake" {
   # Resource configuration parameters
   # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
@@ -13,11 +14,13 @@ resource "aws_s3_bucket" "datalake" {
 
 }
 
+# datalake acl
 resource "aws_s3_bucket_acl" "datalake_acl" {
   bucket = aws_s3_bucket.datalake.bucket
   acl    = "private"
 }
 
+# datalake side encryption
 resource "aws_s3_bucket_server_side_encryption_configuration" "datalake_side_encryption" {
   bucket = aws_s3_bucket.datalake.bucket
 
@@ -28,3 +31,29 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "datalake_side_enc
   }
 }
 
+# stream bucket
+resource "aws_s3_bucket" "stream" {
+  bucket = "igti-fer-streaming-bucket"
+
+  tags = {
+    IES   = "IGTI",
+    CURSO = "EDC"
+  }
+}
+
+# stream acl
+resource "aws_s3_bucket_acl" "stream_acl" {
+  bucket = aws_s3_bucket.stream.bucket
+  acl    = "private"
+}
+
+# stream side encryption
+resource "aws_s3_bucket_server_side_encryption_configuration" "stream_side_encryption" {
+  bucket = aws_s3_bucket.stream.bucket
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
+    }
+  }
+}

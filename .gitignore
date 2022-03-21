@@ -3,6 +3,7 @@
 *.vscode
 *.DS_store*
 *.exe
+*.zip
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
