@@ -25,7 +25,7 @@ logger.info("Importing delta.tables...")
 logger.info("Produzindo novos dados...")
 enemnovo = (
     spark.read.format("delta")
-    .load("s3://datalake-fer-igti-edc-tf/staging-zone/enem")
+    .load("s3://datalake-fer-igti-edc/staging/enem/")
 )
 
 # Define algumas inscricoes (chaves) que serao alteradas
@@ -89,7 +89,7 @@ enemnovo = enemnovo.withColumn("NO_MUNICIPIO_RESIDENCIA", lit(
 
 logger.info("Pega os dados do Enem velhos na tabela Delta...")
 enemvelho = DeltaTable.forPath(
-    spark, "s3://datalake-fer-igti-edc-tf/staging-zone/enem")
+    spark, "s3://datalake-fer-igti-edc/staging/enem/")
 
 
 logger.info("Realiza o UPSERT...")
