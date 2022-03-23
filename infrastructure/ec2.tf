@@ -20,7 +20,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "airflow" {
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = "t3.medium"
-  key_key_name                = var.key_pair_name
+  key_name                    = var.key_pair_name
   associate_public_ip_address = true
   security_groups             = [aws_security_group.airflow_sg.id]
   subnet_id                   = var.airflow_subnet_id
