@@ -16,7 +16,7 @@ s3client = boto3.client("s3", aws_access_key_id=aws_access_key_id,
 
 # Taskflow API
 default_args = {
-    'owner': 'Neylson Crepalde',
+    'owner': 'Fernando Oliveira',
     "depends_on_past": False,
     "start_date": days_ago(2),
     "email": ["airflow@airflow.com"],
