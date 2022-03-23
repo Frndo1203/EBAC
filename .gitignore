@@ -4,7 +4,7 @@
 *.DS_store*
 *.exe
 *.zip
-*.json
+airflow_variables.json
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
