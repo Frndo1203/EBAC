@@ -4,6 +4,7 @@
 *.DS_store*
 *.exe
 *.zip
+*.json
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
