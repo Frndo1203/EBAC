@@ -17,3 +17,16 @@ variable "base_region" {
 variable "lambda_function_name" {
   default = "ExecuteEMR"
 }
+
+variable "key_pair_name" {
+  default = "data-lake-key"
+}
+
+variable "airflow_subnet_id" {
+  default = "subnet-07dfa62d04a3387ae"
+}
+
+
+variable "vpc_id" {
+  default = "vpc-0d08f4760c769bd70"
+}
